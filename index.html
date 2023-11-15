@@ -8,14 +8,14 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        
+
     </style>
 </head>
 
 <body>
     <div class="container">
 
-        <h1 >Fruiteria online</h1>
+        <h1>Fruiteria online</h1>
 
         <div id="presentacion">
             <h2>Aplicación para comprar fruta</h2>
@@ -27,28 +27,28 @@
                 <img class="imagen" src="img/kiwi.png" alt="Kiwi verde">
                 <p>Kiwi : 3.50 €/kg</p>
             </div>
-            <div class="imagenes">
+            <div class="imagenes" onclick="comprar('Limones', 2.85, 'kg' )">
                 <img class="imagen" src="img/limones.png" alt="Limones">
                 <p>Limones : 2.85 €/kg</p>
             </div>
-            <div class="imagenes">
-                <img class="imagen" src="img/manzana.png" alt="Kiwi verde">
+            <div class="imagenes" onclick="comprar('Manzanas', 1.85, 'kg' )">
+                <img class="imagen" src="img/manzana.png" alt="Manzanas">
                 <p>Manzanas : 1.85 €/kg</p>
             </div>
-            <div class="imagenes">
-                <img class="imagen" src="img/pina.png" alt="Kiwi verde">
+            <div class="imagenes" onclick="comprar('Piña', 4.60, 'ud' )">
+                <img class="imagen" src="img/pina.png" alt="Piña">
                 <p>Piña : 4.60 €/ud</p>
             </div>
-            <div class="imagenes">
-                <img class="imagen" src="img/platanos.png" alt="Kiwi verde">
+            <div class="imagenes" onclick="comprar('Plátanos', 1.90, 'kg' )">
+                <img class="imagen" src="img/platanos.png" alt="Plátanos">
                 <p>Plátanos : 1.90 €/kg</p>
             </div>
-            <div class="imagenes">
-                <img class="imagen" src="img/pomelo.png" alt="Kiwi verde">
+            <div class="imagenes" onclick="comprar('Pomelos', 2.40, 'kg' )">
+                <img class="imagen" src="img/pomelo.png" alt="Pomelo">
                 <p>Pomelos : 2.40 €/kg</p>
             </div>
-            <div class="imagenes">
-                <img class="imagen" src="img/sandia.png" alt="Kiwi verde">
+            <div class="imagenes" onclick="comprar('Sandía', 0.80, 'kg' )">
+                <img class="imagen" src="img/sandia.png" alt="Sandía">
                 <p>Sandía : 0.80 €/kg</p>
             </div>
 
@@ -58,6 +58,7 @@
         <div id="recibo">
             <h2 id="pendiente">Aún no ha realizado ninguna compra</h2>
             <div id="carrito"></div>
+            <div id="totalCompra"></div>
 
         </div>
 

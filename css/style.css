@@ -40,4 +40,13 @@ p#subtitulo {
     width: 80%;
 }
 
+.parcialCompra {
+    text-align: end;
+}
+
+#finalCompra {
+    text-align: end;
+    font-weight: bold;
+}
+
 
