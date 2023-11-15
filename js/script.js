@@ -7,10 +7,12 @@ function comprar( fruta, precio, unidad) {
     // pedimos al cliente qué cantidad desea
     let cantidad = prompt(`¿Que cantidad de ${fruta} quiere? `)
 
+
     // *** IMPORTANTE : falta la validación del dato que escribe el usuario
     // *** no deberíamos aceptar cantidades menores de cero ni texto
 
     let parcialCompra = precio * cantidad
+    cantidad = parseFloat(cantidad).toFixed(2)
     // redondear a dos decimales
     parcialCompra = parcialCompra.toFixed(2)
 
