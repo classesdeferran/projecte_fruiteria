@@ -1,5 +1,10 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 .container {
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -16,7 +21,7 @@ h2 {
 }
 p {
     color: black;
-    font-size: 1em;
+    font-size: 1.5em;
     text-align:center;
 }
 p#subtitulo {    
@@ -28,10 +33,11 @@ p#subtitulo {
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    /* flex-wrap: wrap; */
 }
 
 .imagen {
-    width: 200px;
+    width: 80%;
 }
 
 

@@ -23,12 +23,12 @@
         </div>
 
         <div id="frutas">
-            <div class="imagenes">
+            <div class="imagenes" onclick="comprar('Kiwis', 3.50, 'kg' )">
                 <img class="imagen" src="img/kiwi.png" alt="Kiwi verde">
                 <p>Kiwi : 3.50 €/kg</p>
             </div>
             <div class="imagenes">
-                <img class="imagen" src="img/limones.png" alt="Kiwi verde">
+                <img class="imagen" src="img/limones.png" alt="Limones">
                 <p>Limones : 2.85 €/kg</p>
             </div>
             <div class="imagenes">
@@ -54,6 +54,13 @@
 
 
         </div>
+
+        <div id="recibo">
+            <h2 id="pendiente">Aún no ha realizado ninguna compra</h2>
+            <div id="carrito"></div>
+
+        </div>
+
     </div>
 
     <script src="js/script.js"></script>
