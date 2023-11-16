@@ -1,5 +1,6 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 
@@ -33,11 +34,21 @@ p#subtitulo {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 .imagen {
-    width: 80%;
+    width: 100%;
+}
+
+.imagenes {
+    width: 25%;
+}
+
+.imagenes:hover {
+    background-color:rgb(97, 156, 158, 0.5) ;
+    border: 2px solid blue;
+    border-radius: 5px;
 }
 
 .parcialCompra {

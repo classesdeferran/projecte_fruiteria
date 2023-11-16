@@ -7,9 +7,15 @@ function comprar( fruta, precio, unidad) {
     // pedimos al cliente qué cantidad desea
     let cantidad = prompt(`¿Que cantidad de ${fruta} quiere? `)
 
-
     // *** IMPORTANTE : falta la validación del dato que escribe el usuario
     // *** no deberíamos aceptar cantidades menores de cero ni texto
+    if (cantidad == null){
+        return
+    }
+    if (isNaN(cantidad) || cantidad <= 0) {
+        alert(`"${cantidad}" no es una cantidad válida`)
+        return
+    }
 
     let parcialCompra = precio * cantidad
     cantidad = parseFloat(cantidad).toFixed(2)
