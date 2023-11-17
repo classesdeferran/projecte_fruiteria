@@ -1,6 +1,21 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); */
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    margin : 0;
+}
+
+#fondo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url("../img/frutas.jpg"); */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3)), 
+    url("../img/frutas.jpg");
 }
 
 
@@ -11,8 +26,11 @@
 
 h1 {
     color: black;
-    font-size: 5em;
+    font-size: 6em;
     text-align: center;
+    font-family: 'Pacifico', 'Times New Roman', Times, serif;
+    font-weight: 100;
+    border-bottom: 5px double red;
 }
 
 h2 {

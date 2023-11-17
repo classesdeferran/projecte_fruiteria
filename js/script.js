@@ -2,6 +2,35 @@
 let totalCompra = 0
 let mensajeCompra = ""
 
+// Usuarios de prueba
+let usuarios = [
+    {"nombre": "Pepe", "password": 1234},
+    {"nombre": "Anna", "password": "Java_2023"}
+]
+
+// Validar los usuarios
+function login() {
+    let nombre = document.getElementById("nombre").value
+    let password = document.getElementById("password").value
+    // 
+    document.getElementById("nombre").value = ""
+    document.getElementById("password").value = ""
+
+    let mensaje = "Error en los datos"
+    for (let i = 0; i < usuarios.length; i++) {
+        if ((usuarios[i].nombre == nombre) && (usuarios[i].password == password)) {
+            mensaje = `Todo OK`
+            break
+        } 
+    }
+
+    document.getElementById("error").innerText = mensaje
+
+}
+
+
+
+// Proceso de compra
 function comprar( fruta, precio, unidad) {
     
     // pedimos al cliente qué cantidad desea
