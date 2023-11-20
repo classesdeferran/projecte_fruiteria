@@ -17,10 +17,14 @@ function login() {
     document.getElementById("password").value = ""
 
     let mensaje = "Error en los datos"
+
+    // Revisar las contraseñas por si los datos son correctos
     for (let i = 0; i < usuarios.length; i++) {
         if ((usuarios[i].nombre == nombre) && (usuarios[i].password == password)) {
             mensaje = `Todo OK`
-            break
+            document.getElementById("fondo").style.display ="none"
+            document.getElementById("container").style.display ="block"
+            return
         } 
     }
 

@@ -17,23 +17,23 @@
     <div id="fondo">
         <div id="inicio">
             <div id="login">
+                <p id="pform">Introduzca sus datos</p>
                 <form action="#">
                     <label for="nombre">Nombre:</label>
                     <input type="text" name="nombre" id="nombre">
                     <label for="password">Contraseña</label>
                     <input type="password" name="password" id="password">
-                    <button onclick="login()">Enviar</button>
+                    <!-- <button onclick="login()">Enviar</button> -->
+                    <input type="button" value="Enviar" onclick="return login()">
                 </form>
                 <p id="error"></p>
             </div>
         </div>
-
-
     </div>
 
 
 
-    <div class="container">
+    <div id="container">
 
         <h1>Fruiteria online</h1>
 
